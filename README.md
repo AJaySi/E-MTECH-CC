@@ -1,27 +1,31 @@
+# MTek SavAIr
 IMPORTANT: This is a weekend project with strong coffee Js. Presently, 'just for friends' development stage, WIP.
-
-Irony: We started this project, as finding time is Not as simple as 'Import time'. 
-Please contribute, Dont ask questions, features, Criticise. In Active Developement. 
-Remember - Its a Free tool & NOT included in your course fee.
+We're still trying to figure things out. 😉
 
 ---
 
-## Introduction:
+## Hers's the Plan: (Hold the Beer)
 
 Provide AI tooling for E-MTECH_CC students to learn with AI. Abstracting AI tech from them to focus on the course itself.
 Aimed at being student's AI assistant, specilizing in course material of e-MTECH-CC IIT Patna.
 Provide a framework to play with & also personlize learning as per their temperment and AI powered.
 Integrate/Encapsulate Latest AI tech for making learning easier for E-MTECH students.
 Integrate personlity to AI to tailor response as per each students liking, level etc. Hyper personlized learning.
+Personalized learning: It'll tailor your learning experience. No one will ever know you don't understand anything!
+Hyper-personalized learning: It's like reading your mind... but we haven't quite figured that part out yet.
 
 Note: The AI knows more than you. A Super-teacher who will never tire of your questions and tailor response as you would like to learn.
 
 ---
 
-## How to Run: Getting started
+## 🏃How to Run This Magical Thing: 🏃
 
-For MTECH students: Clone this repo, pip install requirements.txt and then streamlit run emtech_cc.py
-Visit the local weburl and it will guide you on howto setup and run.
+For MTECH students:
+
+- Clone this repo. (You know how to do that, right?)
+- Install the requirements.txt (If you don't know what that is, maybe opt E-MBA).
+- streamlit run emtech_cc.py. (Duh! Make sure you're in the right directory!)
+- Visit the web URL. (Hopefully, it'll work... fingers crossed!).
 
 ---
 
@@ -40,10 +44,11 @@ NOTE: To Err is Human & AI...
 
 ---
 
-## Implementation Details & Design considerations:
+## 🚧 Implementation Details & Design considerations:
 
-1). Using standard libraries like langchain, llamaindex offer RAG solutions. 
-Implementation is easier, community support & sh-t-like-that. Heavy libs, lesser customizations and whats the fun in using them.
+1). Avoid Using standard RAG libraries like langchain, llamaindex, dify, haystack etc. 
+Implementation is easier, community support & sh-t-like-that. 
+Heavy libs, lesser customizations and whats the fun in using them.
 
 2). Lets build our own RAG and make mistakes around it.
 
@@ -54,11 +59,11 @@ Different vendors, formats, codecs make it difficult to parse all. llamaparse is
 
 5). More powerful AI models will give better results, Get your own expensive APIs. Cheapest-APIs-first.
 
-6). Python-Only approach for full stack streamlit app. Cheapest-APIs-first
+6). Python-Only approach for full stack streamlit app. 🤘 We're keeping it simple... for now.
 
 ---
 
-## RoadMap
+## 🚀 RoadMap
 
 1). AssemblyAI integration - Speech to text analysis
 2). Support Gemini & OpenAI AI models.
@@ -71,3 +76,9 @@ Different vendors, formats, codecs make it difficult to parse all. llamaparse is
 9). Learn C & python programming.
 10). Fine-Tune AI models with prompting.
 11). Better react-based UI.
+
+---
+
+Irony: We started this project, as finding time is Not as simple as 'Import time'.
+Please contribute, Dont ask questions, features, Criticise. In Active Developement.
+Remember - Its a Free tool & NOT included in your course fee.
