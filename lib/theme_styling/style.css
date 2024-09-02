@@ -1,0 +1,43 @@
+/* Sidebar Styles */
+.stSidebar {
+  background-color: #F0F8FF; /* Light blue sidebar background */
+}
+
+.stSidebar .st-expanderHeader {
+  background-color: #ADD8E6; /* Lighter blue for expander headers */
+  font-size: 18px; 
+  font-weight: bold;
+  padding: 10px; 
+}
+
+/* Form Input Styles */
+.stTextInput { 
+  width: 90%; /* Adjust width as needed */
+}
+
+.st-ex {
+  font-size: 16px;
+  color: #3498DB;
+}
+
+/* Other Styles (You can add more) */
+.st-my-custom-style { 
+  /* ... Add any specific styles here */
+}
+
+/* Button Styles */
+.st-bm {
+  background-color: #2196F3; 
+  color: white; 
+  padding: 10px 20px;
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 16px; 
+  font-weight: bold;
+}
+
+.st-bm:hover { 
+  background-color: #008CBA; 
+  opacity: 0.8; 
+}

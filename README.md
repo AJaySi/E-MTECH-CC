@@ -1,36 +1,47 @@
 # MTek SavAIr
-IMPORTANT: This is a weekend project with strong coffee Js. Presently, 'just for friends' development stage, WIP.
-We're still trying to figure things out. 😉
+IMPORTANT: This is a weekend project with strong coffee Js😉. Presently, 'just for friends' development stage, WIP.
+
+Talk/Chat with EMtech course material. Personalized AI Mtech Tutor for Executives.
+Present functionality, upload a single e-mtech-cc pdf and ask questions around it. Pretty basic.
+A feeble attempt is made to personlize AI tutor as per student's learning preferances.
+
+> [!NOTE] <p> Use single pdf upload, as the idea is to quality check AI responses for a small sample space(S).
+> [How to Prompt AI tutor](https://github.com/AJaySi/E-MTECH-CC/wiki/How-to-prompt-emtech-chatbot)</p>
 
 ---
 
 ## Hers's the Plan: (Hold the Beer)
 
-Provide AI tooling for E-MTECH_CC students to learn with AI. Abstracting AI tech from them to focus on the course itself.
-Aimed at being student's AI assistant, specilizing in course material of e-MTECH-CC IIT Patna.
-Provide a framework to play with & also personlize learning as per their temperment and AI powered.
-Integrate/Encapsulate Latest AI tech for making learning easier for E-MTECH students.
-Integrate personlity to AI to tailor response as per each students liking, level etc. Hyper personlized learning.
-Personalized learning: It'll tailor your learning experience. No one will ever know you don't understand anything!
-Hyper-personalized learning: It's like reading your mind... but we haven't quite figured that part out yet.
+- Provide AI tooling for E-MTECH_CC students to learn with AI. Abstracting AI tech from them to focus on the course itself.
+- Aimed at being student's AI assistant, specilizing in course material of e-MTECH-CC IIT Patna.
+- Provide a framework to play with & also personlize learning as per their temperment and AI powered.
+- Integrate/Encapsulate Latest AI tech for making learning easier for E-MTECH students.
+- Integrate personlity to AI to tailor response as per each students liking, level etc. Hyper personlized learning.
+- Personalized learning: It'll tailor your learning experience. No one will ever know you don't understand anything!
+- Taps into the stored vectors, providing accurate and context-aware responses from course documents (Lets Hope).
+- Hyper-personalized learning: It's like reading your mind... but we haven't quite figured that part out yet.
 
-Note: The AI knows more than you. A Super-teacher who will never tire of your questions and tailor response as you would like to learn.
+> [!NOTE] <p>A Super-teacher who will never tire of your questions and tailor response as you would like to learn.</p>
 
 ---
 
-## 🏃How to Run This Magical Thing: 🏃
+## 🏃How to Run:🏃 Getting Started:
 
 For MTECH students:
 
 - Clone this repo. (You know how to do that, right?)
-- Install the requirements.txt (If you don't know what that is, maybe opt E-MBA).
-- streamlit run emtech_cc.py. (Duh! Make sure you're in the right directory!)
+
+- Install the requirements.txt 
+- `pip install -r requirements.txt`
+
+- Run the App as:
+- `streamlit run basic_pdf_rag.py`
+
 - Visit the web URL. (Hopefully, it'll work... fingers crossed!).
 
 ---
 
-## Features & Usecases for E-MTECH-CC Course:
-
+<details><summary><h3>Features & Usecases for E-MTECH-CC Course: VishwaGuru AI tutor</h3></summary>
 1). Input slide page contents and ask questions, clarifications, examples etc
 2). Input course video for speech to text, get summary, 'what the professor said', 'student questions' etc
 Note: 'Sir, please stop video recording', not required as the AI model recognises the main speakers and only transcribes their part.
@@ -41,6 +52,7 @@ This is speech diarization.
 6). Supports Text, Video, Image from PDF & PPT files.
 
 NOTE: To Err is Human & AI...
+</details>
 
 ---
 
@@ -61,21 +73,11 @@ Different vendors, formats, codecs make it difficult to parse all. llamaparse is
 
 6). Python-Only approach for full stack streamlit app. 🤘 We're keeping it simple... for now.
 
+7). Tech-stack: Python, Google AI, FAISS, Streamlit, chromaDB, PyPDF2 etc 
+
 ---
 
-## 🚀 RoadMap
-
-1). AssemblyAI integration - Speech to text analysis
-2). Support Gemini & OpenAI AI models.
-3). Experiment with different RAG framework & Benchmark accuracy.
-4). Learn with speech & Visualizations for course material.
-5). Chat with your EMTECH-CC-IITPatna syllabus and its course materials.
-6). Provide feedback to teachers of how students are learning.
-7). Chat with classroom video recordings and ask questions, get details, links etc.
-8). Embed microsft chats to get useful messages and store in db.
-9). Learn C & python programming.
-10). Fine-Tune AI models with prompting.
-11). Better react-based UI.
+## [🚀 RoadMap (To The Moon & Back)](https://github.com/AJaySi/E-MTECH-CC/wiki/RoadMap)
 
 ---
 
