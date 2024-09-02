@@ -9,7 +9,8 @@ A feeble attempt is made to personlize AI tutor as per student's learning prefer
 > [How to Prompt AI tutor](https://github.com/AJaySi/E-MTECH-CC/wiki/How-to-prompt-emtech-chatbot)</p>
 
 ---
-
+![](https://github.com/AJaySi/E-MTECH-CC/blob/main/lib/workspace/data/emtech-homepage.png)
+---
 ## Hers's the Plan: (Hold the Beer)
 
 - Provide AI tooling for E-MTECH_CC students to learn with AI. Abstracting AI tech from them to focus on the course itself.
@@ -35,13 +36,13 @@ For MTECH students:
 - `pip install -r requirements.txt`
 
 - Run the App as:
-- `streamlit run basic_pdf_rag.py`
+- `streamlit run emtech_savior.py`
 
 - Visit the web URL. (Hopefully, it'll work... fingers crossed!).
 
 ---
-
-<details><summary><h3>Features & Usecases for E-MTECH-CC Course: VishwaGuru AI tutor</h3></summary>
+![](https://github.com/AJaySi/E-MTECH-CC/blob/main/lib/workspace/data/mtech-tutor1.png)
+<details><summary><h3>Features & Usecases</h3></summary>
 1). Input slide page contents and ask questions, clarifications, examples etc
 2). Input course video for speech to text, get summary, 'what the professor said', 'student questions' etc
 Note: 'Sir, please stop video recording', not required as the AI model recognises the main speakers and only transcribes their part.
