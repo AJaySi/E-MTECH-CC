@@ -7,7 +7,7 @@ A feeble attempt is made to personlize AI tutor as per student's learning prefer
 
 > [!NOTE] <p> Use single pdf upload, as the idea is to quality check AI responses for a small sample space(S).
 > [How to Prompt AI tutor](https://github.com/AJaySi/E-MTECH-CC/wiki/How-to-prompt-emtech-chatbot)</p>
-> FUTURE: Will include support for Multiplt PDF upload.
+> FUTURE: Will include support for Multiple PDF upload.
 ---
 ![](https://github.com/AJaySi/E-MTECH-CC/blob/main/lib/workspace/data/emtech-homepage.png)
 ---
