@@ -7,3 +7,7 @@ chromadb
 faiss-cpu
 langchain_google_genai
 langchain-community
+lagnchain.chains
+langchain.prompts
+dotenv
+filetype

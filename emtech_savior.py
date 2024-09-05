@@ -9,6 +9,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.chains.question_answering import load_qa_chain
 from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
+import filetype
 
 load_dotenv()
 
@@ -204,18 +205,52 @@ with st.sidebar:
         tone = st.selectbox("Preferred Tone 🗣️ ", ["Formal", "Friendly", "Motivational"])
         programming_level = st.selectbox("Programming Experience", ["Beginner", "Medium", "Advanced"])
 
-    pdf_docs = st.file_uploader("Upload your PDF files, Click 'Submit & Process' to start learning! 📖", accept_multiple_files=True)
-    
-    if st.button("📖Submit & Process"):
-        with st.spinner("Reading and analyzing your documents... ⏳"):
-            if pdf_docs:
-                raw_text = get_pdf_text(pdf_docs)
-                if raw_text:
-                    text_chunks = get_text_chunks(raw_text)
-                    get_vector_store(text_chunks)
-                    st.success("Done! Ask me questions based on the content. 🎉")
-            else:
-                st.warning("No files were uploaded. Please upload at least one PDF file.")
+    uploaded_files = st.file_uploader("Upload your files (PDF, Video, Image, PPT). Click 'Submit & Process' to start! 📖", 
+                                  accept_multiple_files=True)
+
+    # Button to process files
+    if st.button("📖 Submit & Process"):
+        if uploaded_files:
+            for uploaded_file in uploaded_files:
+                file_extension = get_file_type(uploaded_file)
+                
+                if file_extension == 'pdf':
+                    process_pdf([uploaded_file])  # PDF processing
+                elif file_extension in ['mp4', 'avi', 'mov', 'mkv']:  # Supported video formats
+                    process_video([uploaded_file])  # Video processing
+                elif file_extension in ['jpg', 'jpeg', 'png', 'gif']:  # Supported image formats
+                    process_image([uploaded_file])  # Image processing
+                elif file_extension in ['ppt', 'pptx']:  # Supported PPT formats
+                    process_ppt([uploaded_file])  # PPT processing
+                else:
+                    st.warning(f"Unsupported file type: {file_extension}. Please upload a PDF, video, image, or PPT file.")
+        else:
+            st.warning("No files were uploaded. Please upload at least one file.")    
+
+# Placeholder functions for different file types
+def process_pdf(pdf_docs):
+    raw_text = get_pdf_text(pdf_docs)
+    if raw_text:
+        text_chunks = get_text_chunks(raw_text)
+        get_vector_store(text_chunks)
+        st.success("PDF content processed! Ask me questions based on the content. 🎉")
+
+def process_video(video_files):
+    # Placeholder for video processing logic
+    st.info("Video processing function called. 🎥")
+
+def process_image(image_files):
+    # Placeholder for image processing logic
+    st.info("Image processing function called. 🖼️")
+
+def process_ppt(ppt_files):
+    # Placeholder for PPT processing logic
+    st.info("PPT processing function called. 📊")
+
+def get_file_type(file):
+    kind = filetype.guess(file.read())
+    file.seek(0)  # Reset file pointer after reading
+    return kind.extension if kind else None
 
 
 if __name__ == "__main__":
